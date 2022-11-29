@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  outline: none;
+  line-height: 1.6;
+  font-family: "Noto Sans KR";
+}
+.wrapper {
+  width: 510px;
+  height: 680px;
+  margin: 0 auto;
+  text-align: center;
+}
+.wrapper-inner {
+  padding: 100px 30px;
+}
+.inner-login {
+  width: 100%;
+  height: 532px;
+  background-color: #f7f7f7;
+  border-radius: 20px;
+  padding: 60px 0;
+}
+.wrapper-inner h2 {
+  font-size: 46px;
+  font-weight: 300;
+  text-align: center;
+}
+.box-login div {
+  margin-bottom: 10px;
+}
+
+.box-login input {
+  border-radius: 33px;
+  background-color: #fff;
+  box-shadow: 0 0 40px 0 rgb(0 0 0 / 5%);
+  border: none;
+  width: 365px;
+  height: 65px;
+  line-height: 65px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 15px;
+  padding: 0 40px;
+}
+.box-login input::placeholder {
+  color: #000;
+}
+.input-checkbox {
+  width: 365px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  letter-spacing: -0.5px;
+  line-height: 1.6;
+  outline: none;
+  margin: 20px auto 40px auto;
+  padding: 0;
+  color: #93989d;
+  display: flex;
+  align-items: center;
+}
+.input-checkbox div:nth-child(1) {
+  margin-right: 25px;
+}
+.input-checkbox input[type="checkbox"] {
+  display: none;
+}
+.input-checkbox label {
+  vertical-align: middle;
+  cursor: pointer;
+  position: relative;
+  padding-left: 23px;
+}
+.input-checkbox label:after {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 17px;
+  height: 17px;
+  content: "";
+  border: 1px solid #93989d;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.input-checkbox input[type="checkbox"]:checked + label {
+  color: #000;
+  font-weight: 700;
+}
+.input-checkbox input[type="checkbox"]:checked + label:after {
+  border: 1px solid #000;
+  background: #000 url(mem_chk.png) no-repeat center;
+}
+.input-checkbox span {
+  margin-right: 20px;
+}
+.btn-login div {
+  margin-bottom: 10px;
+}
+.btn-login div:nth-child(1) button {
+  width: 365px;
+  height: 65px;
+  background-color: #326aff;
+  color: #fff;
+  height: 65px;
+  line-height: 65px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 33px;
+  cursor: pointer;
+  box-shadow: 0 0 40px 0 rgb(0 0 0 / 5%);
+}
+
+.btn-login div:last-child button {
+  width: 365px;
+  height: 65px;
+  background-color: #f7f7f7;
+  line-height: 65px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  border: 2px solid #326aff;
+  border-radius: 33px;
+  cursor: pointer;
+  box-shadow: 0 0 40px 0 rgb(0 0 0 / 5%);
+  color: #326aff;
+}
+.search {
+  margin-top: 20px;
+  letter-spacing: -0.5px;
+  line-height: 1.6;
+  color: #84888d;
+  font-size: 15px;
+  display: none;
+}
+.search {
+  padding-left: 10px;
+}
+.search span:nth-child(2) {
+  margin: 0 10px;
+}
+
+#tab1:checked ~ .search-member {
+  display: block;
+}
+#tab2:checked ~ .search-company {
+  display: block;
+}
+.inner-login input[type="radio"] {
+  display: none;
+}
+.label-login {
+  width: 365px;
+  display: flex;
+  align-items: center;
+  margin: 20px auto 10px auto;
+}
+.label-login label {
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  width: 50%;
+  display: block;
+  padding-bottom: 14px;
+  border-bottom: 2px solid #dcdcdc;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.label-login label.on {
+  color: #326aff;
+  border-color: #326aff;
+}

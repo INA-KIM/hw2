@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="wrapper-inner">
+        <div><h2>로그인</h2></div>
+        <div class="label-login">
+          <label for="tab1" class="on">회원로그인</label>
+          <label for="tab2">기업로그인</label>
+        </div>
+        <div class="inner-login">
+          <input type="radio" id="tab1" name="tabmenu" checked />
+          <input type="radio" id="tab2" name="tabmenu" />
+          <div class="box-login">
+            <div><input type="text" placeholder="아이디" /></div>
+            <div><input type="text" placeholder="비밀번호" /></div>
+          </div>
+          <div class="input-checkbox">
+            <div>
+              <input type="checkbox" name="" id="login-status" />
+              <label for="login-status">로그인 상태유지</label>
+            </div>
+            <div>
+              <input type="checkbox" name="" id="id-save" />
+              <label for="id-save">아이디 저장</label>
+            </div>
+          </div>
+          <div class="btn-login">
+            <div><button>로그인</button></div>
+            <div><button>회원가입하기</button></div>
+          </div>
+          <div class="search search-member">
+            <span>개인 아이디 찾기</span>
+            <span>|</span>
+            <span>개인 비밀번호 찾기</span>
+          </div>
+          <div class="search search-company">
+            <span>기업 아이디 찾기</span>
+            <span>|</span>
+            <span>기업 비밀번호 찾기</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"></script>
+    <script>
+      // 라벨 스크립트로 처리 하는 방식
+      $(".label-login label").on("click", function () {
+        $(".label-login label").removeClass("on");
+        $(this).addClass("on");
+      });
+    </script>
+  </body>
+</html>
